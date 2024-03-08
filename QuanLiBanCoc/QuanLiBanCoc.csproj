@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ECB1FC8C-61E5-4348-A28A-599A068F6417}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLiBanCoc</RootNamespace>
+    <AssemblyName>QuanLiBanCoc</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BanHang\FormTimKiemHDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BanHang\FormTimKiemHDB.Designer.cs">
+      <DependentUpon>FormTimKiemHDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BanHang\FormBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BanHang\FormBanHang.Designer.cs">
+      <DependentUpon>FormBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhachHang\QLKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhachHang\QLKH.Designer.cs">
+      <DependentUpon>QLKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien\FormQLNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVien\FormQLNV.Designer.cs">
+      <DependentUpon>FormQLNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien\FormTaoTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVien\FormTaoTK.Designer.cs">
+      <DependentUpon>FormTaoTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien\FormTimKiemNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVien\FormTimKiemNV.Designer.cs">
+      <DependentUpon>FormTimKiemNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLSP\FormTimKiemSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLSP\FormTimKiemSP.Designer.cs">
+      <DependentUpon>FormTimKiemSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BanHang\FormHDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BanHang\FormHDB.Designer.cs">
+      <DependentUpon>FormHDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhapHang\FormHDN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhapHang\FormHDN.Designer.cs">
+      <DependentUpon>FormHDN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhapHang\FormNhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhapHang\FormNhapHang.Designer.cs">
+      <DependentUpon>FormNhapHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLSP\FormQLSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLSP\FormQLSP.Designer.cs">
+      <DependentUpon>FormQLSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\LoginPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NhapHang\FormTimKiemHDN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhapHang\FormTimKiemHDN.Designer.cs">
+      <DependentUpon>FormTimKiemHDN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Assets\QLiBanCocDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLiBanCocDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\RoundedButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Assets\RoundedTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BanHang\SearchHDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BanHang\SearchHDB.Designer.cs">
+      <DependentUpon>SearchHDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhapHang\SearchHDN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhapHang\SearchHDN.Designer.cs">
+      <DependentUpon>SearchHDN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserSession.cs" />
+    <Compile Include="XuatHoaDon\Transition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XuatHoaDon\Transition.Designer.cs">
+      <DependentUpon>Transition.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BanHang\FormTimKiemHDB.resx">
+      <DependentUpon>FormTimKiemHDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BanHang\FormBanHang.resx">
+      <DependentUpon>FormBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhachHang\QLKH.resx">
+      <DependentUpon>QLKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien\FormQLNV.resx">
+      <DependentUpon>FormQLNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien\FormTaoTK.resx">
+      <DependentUpon>FormTaoTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien\FormTimKiemNV.resx">
+      <DependentUpon>FormTimKiemNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLSP\FormTimKiemSP.resx">
+      <DependentUpon>FormTimKiemSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BanHang\FormHDB.resx">
+      <DependentUpon>FormHDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhapHang\FormHDN.resx">
+      <DependentUpon>FormHDN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhapHang\FormNhapHang.resx">
+      <DependentUpon>FormNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLSP\FormQLSP.resx">
+      <DependentUpon>FormQLSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhapHang\FormTimKiemHDN.resx">
+      <DependentUpon>FormTimKiemHDN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="BanHang\SearchHDB.resx">
+      <DependentUpon>SearchHDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhapHang\SearchHDN.resx">
+      <DependentUpon>SearchHDN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XuatHoaDon\Transition.resx">
+      <DependentUpon>Transition.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Assets\QLiBanCocDataSet.xsc">
+      <DependentUpon>QLiBanCocDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Assets\QLiBanCocDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLiBanCocDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Assets\QLiBanCocDataSet.xss">
+      <DependentUpon>QLiBanCocDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="XuatHoaDon\HDB\HDB_Details\" />
+    <Folder Include="XuatHoaDon\HDN\HDN_Details\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\background - Copy.jpg" />
+    <Content Include="Assets\Menu.jpg" />
+    <Content Include="Assets\nordwood-themes-nDd3dIkkOLo-unsplash - Copy.jpg" />
+    <Content Include="Assets\nordwood-themes-nDd3dIkkOLo-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
